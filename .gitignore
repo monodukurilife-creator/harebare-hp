@@ -1,0 +1,15 @@
+# 自動で作られる公開フォルダ（Netlifyが毎回作り直すのでGitHubには上げない）
+site/
+
+# APIキーなどの秘密情報（絶対にGitHubへ上げない）
+.env
+
+# Netlify のローカル設定
+.netlify
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store

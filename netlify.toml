@@ -1,0 +1,10 @@
+# Netlify のビルド設定
+# microCMS で「公開」を押す → Webhook で Netlify が起動 →
+# ここに書いたコマンドでページを作り直す → site/ の中身が公開される
+
+[build]
+  command = "python3 _src/build.py"
+  publish = "site"
+
+[build.environment]
+  PYTHON_VERSION = "3.13"

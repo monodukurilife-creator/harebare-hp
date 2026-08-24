@@ -1,0 +1,52 @@
+# 合同会社晴々（HARE HARE, LLC）
+
+> 長崎県長崎市に拠点を置く、AI企画・開発とSNS運用の会社です。生成AIの導入自体を目的とせず、現場の課題をヒアリングしたうえで、経営者やスタッフの右腕となる企業専用AIエージェントを企画・開発します。あわせてSNS運用・ホームページ制作・動画制作も手がけています。
+
+## 基本情報
+
+- 会社名: 合同会社晴々（ごうどうがいしゃ はればれ）
+- 英文表記: HARE HARE, LLC
+- 所在地: 長崎県長崎市江戸町5番8号
+- 設立: 2024年4月23日
+- 代表社員: 宮本益孝
+- 対応エリア: 長崎県全域（長崎市・佐世保市・諫早市・大村市ほか）
+- ウェブサイト: https://www.haretobare.com/
+
+## 提供サービス
+
+### AI企画・開発
+現場の課題をヒアリングし、業務に合わせた企業専用AIエージェントを企画・開発します。ChatGPTなどの汎用AIと異なり、その会社の業務内容・社内ルール・蓄積されたノウハウを前提に設計します。
+実績例: ホテル支配人AI（支配人不在時の接客対応支援）、足場図面AI（ベテラン頼みだった図面作成の効率化）、見積AI、工程管理AI
+詳細: https://www.haretobare.com/service-ai.html
+
+### SNS運用
+フォロワー数を追うのではなく、採用・集客・売上向上という目的から逆算した「ファンづくり」を重視する設計・運用支援です。Instagramを中心に対応します。
+詳細: https://www.haretobare.com/service-sns.html
+
+### 共同開発
+新規事業の立ち上げや、既存商品へのサブスクモデルの掛け合わせなどを、AIを使って一緒に形にする取り組みです。
+詳細: https://www.haretobare.com/co-development.html
+
+## 対応している経営課題
+
+- 人材不足・業務の属人化: https://www.haretobare.com/issue-personnel.html
+- PR・採用広報: https://www.haretobare.com/issue-recruit.html
+- 受注・売上: https://www.haretobare.com/issue-sales.html
+- SNS運用が続かない: https://www.haretobare.com/issue-sns.html
+- 業務効率化・DX: https://www.haretobare.com/issue-dx.html
+- 集客・来店: https://www.haretobare.com/issue-consult.html
+
+## 主なページ
+
+- トップ: https://www.haretobare.com/
+- ミッション: https://www.haretobare.com/mission.html
+- サービス一覧: https://www.haretobare.com/services.html
+- 導入事例: https://www.haretobare.com/cases.html
+- 会社概要: https://www.haretobare.com/about.html
+- よくあるご質問: https://www.haretobare.com/faq.html
+- トピックス（記事）: https://www.haretobare.com/topics.html
+- お問い合わせ: https://www.haretobare.com/contact.html
+
+## 問い合わせ方法
+
+サイト上のお問い合わせフォーム（https://www.haretobare.com/contact.html ）、または各ページ右下のチャット窓口「HARE AI」からご相談いただけます。無料相談は契約を前提とするものではありません。
