@@ -115,6 +115,16 @@ def build_article(t, shell_top, shell_bottom):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+
+<!-- ▼ アクセス解析(Googleアナリティクス) ここから -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LWV9H4SFNG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', 'G-LWV9H4SFNG');
+</script>
+<!-- ▲ アクセス解析(Googleアナリティクス) ここまで -->
 <noscript><style>.reveal,.eyebrow,h1.hero-title,.hero-sub,.hero-cta{{transform:none !important; animation:none !important;}}</style></noscript>
 
 <script type="application/ld+json">
