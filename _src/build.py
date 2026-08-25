@@ -111,7 +111,7 @@ def build_article(t, shell_top, shell_bottom):
 <meta name="twitter:description" content="{esc(t['excerpt'])}">
 <meta name="twitter:image" content="{BASE_URL}/{esc(t['image'])}">
 
-<link rel="icon" type="image/png" href="images/logo-mark.png">
+<link rel="icon" href="/favicon.ico" sizes="any">\n<link rel="icon" type="image/png" href="images/logo-mark.png">\n<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
