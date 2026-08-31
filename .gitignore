@@ -13,3 +13,6 @@ __pycache__/
 
 # macOS
 .DS_Store
+
+# HARE AIの中継役が使う部品（Netlifyが毎回入れ直すのでGitHubには上げない）
+node_modules/

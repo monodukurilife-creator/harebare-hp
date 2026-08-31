@@ -1,5 +1,24 @@
 [
  {
+  "id": "h_7bvsdyby",
+  "createdAt": "2026-08-28T03:07:22.820Z",
+  "updatedAt": "2026-08-28T03:08:32.419Z",
+  "publishedAt": "2026-08-28T03:07:22.820Z",
+  "revisedAt": "2026-08-28T03:08:32.419Z",
+  "title": "建設業のAI活用とは？業務効率化から「自社専用AI」まで",
+  "date": "2026-08-28T03:08:00.000Z",
+  "category": [
+   "AI活用事例"
+  ],
+  "thumbnail": {
+   "url": "https://images.microcms-assets.io/assets/dfbda76806b7433bb5af7e70b39164e1/4e9abc0759f8456a84375eda4154b191/ao8fugqVnTkKtHF1yL4z4A3pt9MnlqZQOtDfmSFFCcljSVxByY9QBU9UbxqtPrgprV1qcnKtD-pm1QB0t7mD6xqlErTyS_PK2ybndEMgZlK4iYvallfGh0ocQtFBDHpXRZc6IvMduU34QdcXkgmWv_JmQV_ZZnb2X7_nJ_9b_HCEBbUDyaIsx33DDknluP4L.jpeg",
+   "height": 404,
+   "width": 1400
+  },
+  "excerpt": "建設業のAI活用とは？業務効率化から「自社専用AI」まで",
+  "body": "<p></p><h1 style=\"text-align: start\" id=\"h85253eb96d\"><br>建設業のAI活用とは？業務効率化から「自社専用AI」まで</h1><p style=\"text-align: start\">「AIを仕事に活用したいけど、何から始めればいいのかわからない」</p><p style=\"text-align: start\">そんな声が、建設業界でも増えています。</p><p style=\"text-align: start\">建設業では、人手不足や長時間労働に加え、積算・見積、書類作成、工程管理、顧客対応など、さまざまな業務を限られた人員で行わなければなりません。</p><p style=\"text-align: start\">そこで注目されているのが、AIを活用した業務効率化です。</p><figure><img src=\"https://images.microcms-assets.io/assets/dfbda76806b7433bb5af7e70b39164e1/d17af93e528549c19c43bcb30b313f42/cUNf-RwlWbRUJbHmNyu_8azFhaUa0FvwRouT6yT3tFIMXdi0ZcXXjHLbBrHW66ybLTAxD8VLTlroTb4zyH_CWgM0hTOjeBirgIqrLGwbDcD3gUNBlfKM6z02m-E3kKVtoN4iS3QXztydy-P8PJtdupUiYuVf95ElcheLmoREe-k.jpeg\" alt=\"\" width=\"1376\" height=\"768\"></figure><h2 style=\"text-align: start\" id=\"hf66c57d3f4\">建設業でAIが活躍する業務</h2><p style=\"text-align: start\">例えば、AIを活用することで次のような業務を効率化できます。</p><p style=\"text-align: start\">・積算、見積業務<br>・図面や資料の確認<br>・日報や報告書の作成<br>・過去案件の検索、分析<br>・工程管理<br>・顧客からの問い合わせ対応<br>・営業資料や社内資料の作成</p><p style=\"text-align: start\">特に、毎回同じような作業を繰り返している業務は、AI化との相性が良い分野です。</p><p style=\"text-align: start\">例えば、これまで担当者が図面を確認し、数量を拾い、単価を調べ、Excelへ入力して見積を作成していた業務も、AIを活用することで大幅な効率化が期待できます。</p><h2 style=\"text-align: start\" id=\"h1d0bf60dd6\">ChatGPTを使うだけがAI活用ではありません</h2><p style=\"text-align: start\">「AI＝ChatGPT」と考えている方も多いかもしれません。</p><p style=\"text-align: start\">もちろん、ChatGPTなどの生成AIは非常に便利です。しかし、自社独自の単価、過去の見積、社内ルール、業務フローなどを組み合わせることで、さらに実用的なAIを作ることができます。</p><p style=\"text-align: start\">つまり、</p><p style=\"text-align: start\"><strong>汎用AIを使う → 自社のデータを活用する → 自社専用AIを作る</strong></p><p style=\"text-align: start\">というステップです。</p><p style=\"text-align: start\">例えば建設会社専用のAIなら、</p><p style=\"text-align: start\">「この工事の見積を作って」</p><p style=\"text-align: start\">「過去の似た案件はいくらだった？」</p><p style=\"text-align: start\">「この案件で粗利20％を確保するには、いくらで受注すべき？」</p><p style=\"text-align: start\">といった質問をAIにすることも可能になります。</p><p style=\"text-align: start\">AIを単なる便利なツールとして使うのではなく、<strong>自社の業務を理解した「AI社員」のように活用する</strong>という考え方です。</p><figure><img src=\"https://images.microcms-assets.io/assets/dfbda76806b7433bb5af7e70b39164e1/5df0f4f9edc146fe960c545eed817606/d5BAg2vtA0ld_T3U5V0uCm-veQr2t1MjjL9J0I2RCeVYN-oD8ltgpq6QRamwfp9tm5O3b_iL1peB9RqxMSWfHESJF6U8l2kjAEdesxPnA1RBhjRGLVe_WQi0sqPQBERx4NTeU9ba2BiSwncMJpZsTctF88sizG3GzkOy3qsqu2tthcqHhTQJIvOIn3i8yZgH.jpeg\" alt=\"\" width=\"1101\" height=\"615\"></figure><figure><img src=\"https://images.microcms-assets.io/assets/dfbda76806b7433bb5af7e70b39164e1/ccb9ad73c7e84c5ca7657fc7ffe5f094/0CkfABooZDJrwFE57VfaJ3KhSTkwDC_JQb1d19Zy8a6mE4elpPakOzQcZUw8tvZA0mk7UeThzXDw2Nym9N6h6EZ_IN8yDeQZ6VSpZNGmlXQPelpHE6dAhLD8Kmrz9e0LxVvNwnZfcYOl4mlThWBFGUFOVhKcflVtAARhXWRk7MMPp14Lvr_sD6NPhJmQ2bbM.jpeg\" alt=\"\" width=\"1376\" height=\"768\"></figure><h2 style=\"text-align: start\" id=\"h9d4f130a9e\">AI導入で大切なのは「何をAIに任せるか」</h2><p style=\"text-align: start\">AIを導入すること自体が目的ではありません。</p><p style=\"text-align: start\">大切なのは、自社の業務の中から「時間がかかっている」「人によってやり方が違う」「同じ作業を繰り返している」といった業務を見つけ、AIに任せられる部分を整理することです。</p><p style=\"text-align: start\">私たちは、企業ごとの業務内容や課題をヒアリングし、既存のAIサービスを活用した業務改善から、企業独自のAIシステム開発までサポートしています。</p><p style=\"text-align: start\"><strong>「AIを導入したいけど、何ができるかわからない」</strong></p><p style=\"text-align: start\">そんな段階でも構いません。</p><p style=\"text-align: start\">まずは現在の業務をお聞かせください。</p><p style=\"text-align: start\">あなたの会社なら、どの業務をAIに任せられるのか。</p><p style=\"text-align: start\">一緒に見つけるところから始めてみませんか？<br></p><figure><img src=\"https://images.microcms-assets.io/assets/dfbda76806b7433bb5af7e70b39164e1/4e9abc0759f8456a84375eda4154b191/ao8fugqVnTkKtHF1yL4z4A3pt9MnlqZQOtDfmSFFCcljSVxByY9QBU9UbxqtPrgprV1qcnKtD-pm1QB0t7mD6xqlErTyS_PK2ybndEMgZlK4iYvallfGh0ocQtFBDHpXRZc6IvMduU34QdcXkgmWv_JmQV_ZZnb2X7_nJ_9b_HCEBbUDyaIsx33DDknluP4L.jpeg\" alt=\"\" width=\"1400\" height=\"404\"></figure>"
+ },
+ {
   "id": "sns-not-ads",
   "createdAt": "2026-08-24T07:48:09.007Z",
   "updatedAt": "2026-08-24T07:48:09.007Z",

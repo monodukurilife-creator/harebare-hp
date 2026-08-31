@@ -59,48 +59,9 @@
   });
   inputEl.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.isComposing && e.keyCode !== 229) sendHareMessage(); });
 
-  const SYSTEM_PROMPT = `あなたは「HARE AI」、合同会社晴々のホームページに常駐するAIコンシェルジュです。単なるチャットボットではなく、受付兼コンシェルジュとして振る舞ってください。
+  // 会社紹介やFAQの指示文は netlify/functions/hare.mjs（中継役）へ移しました。
+  // ブラウザ側に置いても意味がなく、二重管理になるためです。
 
-【会社概要】
-合同会社晴々は、長崎県内の企業課題をAIとクリエイティブで解決する地域密着型DX・クリエイティブパートナーです。AI会社でもSNS会社でもなく、企業ごとに異なる課題へ最適な解決策を提案します。
-
-【ミッション】人材不足・売上向上・採用・業務効率化・DX推進・情報発信の解決。
-【ターゲット】長崎県内の中小企業、建設、製造、ホテル・旅館、美容、飲食、医療福祉、自治体など。
-
-【サービス1: AI企画・開発】
-生成AI導入自体が目的ではなく、経営者や現場スタッフの右腕となる専用AIを企画・開発。例:ホテル支配人AI、足場図面AI、見積AI、工程管理AI、営業支援AI、社内マニュアルAI、チャットAI、経営サポートAI、現場サポートAI。
-
-【サービス2: SNS運用】
-フォロワー数ではなく「ファンづくり」を重視。採用・集客・売上向上・認知向上・ブランド構築を目的にInstagram/TikTok/YouTubeを設計・運用。実績:運用開始1ヶ月で問い合わせ30件、受注7件。
-
-【トーン】信頼・安心・親しみやすい・地域密着・相談しやすい・未来志向・プロフェッショナル。営業感を出さず、相談しやすさを最優先に。返信の冒頭では「いいご質問ですね」のように相手の質問や相談内容を軽く肯定・称賛し、明るく前向きな言葉遣いを心がけてください。回答は3〜5文程度で簡潔に、最後は自然に「無料相談」や具体的な次の一歩へ誘導してください。長崎弁や過度なくだけた口調は使わず、丁寧で温かみのある標準語で話してください。
-
-【よくある質問(FAQ)ナレッジ】
-以下の内容を踏まえて、関連する質問には自然な言葉でかみ砕いて回答してください。長文をそのまま読み上げず、要点を3〜5文程度にまとめてください。
-
-<AI・AI開発について>
-・ChatGPTやClaude、Geminiなどの既存AIは幅広い用途に対応する汎用AIだが、私たちが開発するのは企業様の具体的な課題を解決するための「企業様専用のAIエージェント」である。業務内容や社内ルール、蓄積された情報をもとに設計する。導入して終わりではなく、実際の業務で活用しながら改善を重ね、御社の業務データやナレッジを活用しながら運用を通じて改善・最適化していくAIを目指す。
-・AI導入の経験がない企業様も歓迎。現在の業務内容やお困りごとをヒアリングし、AIを活用できる業務や効率化のポイントを一緒に整理する。
-・開発できるAIの例:社内情報の検索・整理、定型業務の自動化、社内ナレッジ活用、データ分析など、企業ごとの課題に合わせて最適な仕組みを提案。ホテル支配人AI、足場図面AI、見積AI、工程管理AIなどの実績がある。
-・AIに詳しい社員がいなくても導入可能。現在の業務や課題をヒアリングした上で、わかりやすく仕組みや活用方法を説明しサポートする。
-・費用は開発するAIの機能や規模、導入する業務内容によって異なるため、まずは状況やご要望を伺い、必要な開発内容を整理した上で見積もりを提案する。
-・導入後も継続してサポート。運用開始後の状況を確認しながら、より使いやすく業務に適したAIへ改善していく。
-
-<SNS運用について>
-・特にInstagramの運用を得意としている。写真や動画などビジュアルで企業や商品の魅力を直感的に伝えられる媒体であり、投稿・リール・ストーリーズなどの機能を活用しながら認知度向上・ブランディング・集客につなげることを重視。「何を投稿するか」だけでなく「どう見せ、どう興味を持ってもらうか」まで設計する。
-・Instagramを始めたい企業様も、目的や現状をヒアイングした上で、プロフィール設計・投稿内容・アカウント全体の設計から提案する。
-・投稿内容は業種や目的、ターゲットにより異なる。商品紹介だけでなく、スタッフ紹介、仕事の裏側、制作風景、お客様の声なども活用し、「売りたい情報」だけでなく「見たい・知りたい」情報を届けることを大切にする。
-・投稿作成のみの依頼にも、企業様の状況に応じて必要な範囲でサポートを提案できる。
-・予算は大きく3つのプランを用意しているが、目的や現在の運用状況、社内で対応できる範囲によって最適なプランが異なるため、まずヒアリングした上で提案する。
-・Instagram運用は短期間の成果だけを目的とせず、継続的な発信を通じて認知や信頼を積み重ね、分析と改善を重ねながら集客や採用などの成果につなげていくもの。
-・SNS運用の経験がない企業様も歓迎。目的やターゲット、サービスの特徴をヒアリングし、運用の土台づくりから提案する。
-
-<合同会社晴々について>
-・AIやデジタル技術を活用し、企業様の課題解決をサポートする会社。AI開発・AIエージェント開発、Instagramを中心としたSNS運用など、企業様の課題や目的に合わせてデジタル技術を活用した解決策を提案している。
-・AIとSNSのどちらに相談すべきか分からない場合も、まず現在の課題や目指したい姿をヒアリングし、一緒に整理する。
-・具体的な依頼内容が決まっていない段階での相談も歓迎。
-・業種や企業規模を問わず相談可能。現在の状況や目的をヒアリングし、それぞれに合った方法を提案する。
-・長崎県外の企業様も、オンライン打ち合わせなどを活用して対応可能。`;
 
   function addMessage(text, who){
     const div = document.createElement('div');
@@ -121,18 +82,11 @@
   }
 
   // ------------------------------------------------------------------
-  // HARE AIの回答ロジック(ルールベース版)
+  // HARE AIの回答
   //
-  // 本来はSYSTEM_PROMPTを使ってClaude APIに問い合わせたいところですが、
-  // ブラウザから直接 api.anthropic.com を呼び出すことはできません
-  // (APIキーが画面のソースに漏れてしまう/ブラウザからのアクセスがブロックされる仕様のため)。
-  // 本物の生成AIと会話させたい場合は、APIキーを安全に保管できるサーバー
-  // (例: Vercel/Cloudflare Workersなどのサーバーレス関数)を1つ用意し、
-  // このページからはそのサーバーだけを呼び出す構成に変更する必要があります。
-  // 実装をご希望の際は開発担当にご相談ください。
-  //
-  // それまでの間、下記のキーワード判定でSYSTEM_PROMPT内のFAQ相当の
-  // 回答を返すようにしています。
+  // ふだんは中継役(/api/hare)を通して本物のAIが答えます。
+  // 鍵が未設定・混雑・通信エラーのときは、下の決まり文句の返事に自動で切り替わります。
+  // つまり下のルールは「AIが使えないときの保険」です。消さないでください。
   // ------------------------------------------------------------------
   const COMPLIMENT_OPENERS = [
     'いいご質問ですね! ',
@@ -145,41 +99,141 @@
     return COMPLIMENT_OPENERS[Math.floor(Math.random() * COMPLIMENT_OPENERS.length)];
   }
 
-  function fallbackReply(q){
-    const t = q.toLowerCase();
-    const opener = pickCompliment();
+  // ------------------------------------------------------------------
+  // 質問の内容ごとの回答ルール
+  //
+  // 上から順に照合し、最初に当てはまったものを返します(順番に意味があります)。
+  // topic は「どんな相談が多かったか」の集計用の名前です。
+  // ルールを足すときは topic も必ず付けてください。
+  // ------------------------------------------------------------------
+  const HARE_RULES = [
+    {
+      topic: '料金・費用',
+      test: t => t.includes('料金') || t.includes('費用') || t.includes('価格') || t.includes('いくら') || t.includes('予算'),
+      answer: 'ご料金は、開発するAIの機能や規模、SNS運用の目的や運用範囲によって変わります。まずは現状やご要望を伺ったうえで、必要な内容を整理してお見積りをご提案しています。目安だけでもお伝えできますので、無料相談でお気軽にお尋ねください。'
+    },
+    {
+      topic: '採用・求人',
+      test: t => t.includes('採用情報') || t.includes('求人') || t.includes('採用してます') || (t.includes('採用') && (t.includes('募集') || t.includes('働き'))),
+      answer: '採用情報ページは現在準備中です。晴々への採用に関するお問い合わせは、下記メールアドレス(harebare@harebare-llc.com)まで直接ご連絡いただけますと幸いです。'
+    },
+    {
+      topic: 'どちらが合うか',
+      test: t => t.includes('診断') || t.includes('合う') || t.includes('おすすめ') || t.includes('どっち') || t.includes('どちら'),
+      answer: '御社の一番の課題は何でしょうか?「人材不足・属人化」「採用」「売上」「業務効率化・DX」のどれかを教えていただければ、AI企画・開発とSNS運用のどちらが合いそうか、簡単にご提案します。'
+    },
+    {
+      topic: '初めてで不安',
+      test: t => t.includes('経験がない') || t.includes('初めて') || t.includes('詳しくない') || t.includes('分からない') || t.includes('わからない'),
+      answer: 'AI導入もSNS運用も、経験がない企業様のご相談がほとんどです。現在の業務内容やお困りごとをヒアリングし、何から始めればよいかを一緒に整理するところからスタートしますので、ご安心ください。'
+    },
+    {
+      topic: 'AI企画・開発',
+      test: t => t.includes('chatgpt') || t.includes('claude') || t.includes('gemini') || t.includes('汎用') || t.includes('生成ai') || (t.includes('ai') && (t.includes('開発') || t.includes('導入') || t.includes('企画'))),
+      answer: 'ChatGPTやGeminiのような汎用AIとは違い、私たちがつくるのは御社の業務内容や社内ルールに合わせた「専用AIエージェント」です。ホテル支配人AI・足場図面AI・見積AIなどの開発実績があり、導入後も運用しながら改善を重ねていきます。AI開発の話を詳しく伺うなら、無料相談がおすすめです。'
+    },
+    {
+      topic: 'SNS運用',
+      test: t => t.includes('instagram') || t.includes('インスタ') || t.includes('tiktok') || t.includes('youtube') || t.includes('sns'),
+      answer: '特にInstagram運用を得意としています。フォロワー数を追うのではなく「ファンづくり」を重視し、採用広報・集客・ブランディングなど目的から逆算してプロフィール設計から投稿・分析まで伴走します。経験がない企業様も、目的とターゲットのヒアリングから一緒に整理しますのでご安心ください。'
+    },
+    {
+      topic: '対応エリア',
+      test: t => t.includes('対応エリア') || t.includes('県外') || t.includes('長崎以外') || t.includes('オンライン'),
+      answer: '長崎県内はもちろん、長崎県外の企業様もオンライン打ち合わせで対応可能です。業種や企業規模を問わず、まずは現状の課題や目指したい姿をお伺いします。'
+    },
+    {
+      topic: '実績・事例',
+      test: t => t.includes('実績') || t.includes('事例') || t.includes('効果'),
+      answer: 'サービス業のお客様では、SNSを採用広報の窓口として設計し直し、運用開始1ヶ月で応募関連の反響30件・採用決定3件という実績があります。ホテル支配人AIや足場図面AIなど、業種特化の開発事例もページ内の「導入事例」でご紹介していますので、ぜひご覧ください。'
+    },
+    {
+      topic: '会社について',
+      test: t => t.includes('どんな会社') || t.includes('会社概要') || t.includes('会社について') || t.includes('晴々'),
+      answer: '合同会社晴々は、長崎県内の企業課題をAIとクリエイティブで解決する地域密着型のパートナーです。AI会社でもSNS会社でもなく、企業ごとの課題に合わせて最適な手段をご提案しています。所在地やメールアドレスはページ下部の会社概要・フッターに記載しています。'
+    },
+    {
+      topic: '無料相談',
+      test: t => t.includes('無料相談') || t.includes('相談したい') || t.includes('問い合わせ') || t.includes('連絡'),
+      answer: 'ありがとうございます。無料相談は契約を前提としたものではなく、まず現状のお悩みを伺うだけの場です。このままここでご相談内容を伺うことも、harebare@harebare-llc.com宛にメールをいただくことも可能です。'
+    }
+  ];
 
-    if (t.includes('料金') || t.includes('費用') || t.includes('価格') || t.includes('いくら') || t.includes('予算')){
-      return opener + 'ご料金は、開発するAIの機能や規模、SNS運用の目的や運用範囲によって変わります。まずは現状やご要望を伺ったうえで、必要な内容を整理してお見積りをご提案しています。目安だけでもお伝えできますので、無料相談でお気軽にお尋ねください。';
+  const HARE_DEFAULT_ANSWER = 'ご質問ありがとうございます。もう少し詳しく——例えば「人材不足」「採用」「売上」「DX」「SNS運用」のどれに近いお悩みか教えていただけますか?最適なサービスをご案内します。お急ぎでしたらharebare@harebare-llc.comへ直接ご連絡いただいても大丈夫です。';
+
+  function fallbackReply(q){
+    const hit = HARE_RULES.find(rule => rule.test(q.toLowerCase()));
+    return pickCompliment() + (hit ? hit.answer : HARE_DEFAULT_ANSWER);
+  }
+
+  // 集計用に、その質問がどのルールに当たったかを返す。
+  // 「該当なし」が多い言葉は、まだHARE AIが答えられていない質問。
+  function hareTopicOf(q){
+    const hit = HARE_RULES.find(rule => rule.test(q.toLowerCase()));
+    return hit ? hit.topic : '該当なし';
+  }
+
+  // ------------------------------------------------------------------
+  // 中継役への問い合わせ
+  //
+  // 鍵が未設定なら中継役は503を返し、以降この訪問中は聞きに行きません
+  // （毎回むだに待たされないようにするため）。
+  // ------------------------------------------------------------------
+  const HARE_API_URL = '/api/hare';
+  let hareApiAvailable = true;
+
+  async function askHareAI(history){
+    if (!hareApiAvailable) return null;
+    try {
+      const res = await fetch(HARE_API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: history })
+      });
+      if (res.status === 429) return null;        // 連投しすぎ。今回だけ決まり文句で返す
+      if (!res.ok) { hareApiAvailable = false; return null; }
+      const data = await res.json();
+      const reply = data && typeof data.reply === 'string' ? data.reply.trim() : '';
+      return reply || null;
+    } catch (e) {
+      hareApiAvailable = false;
+      return null;
     }
-    if (t.includes('採用情報') || t.includes('求人') || t.includes('採用してます') || (t.includes('採用') && (t.includes('募集') || t.includes('働き')))){
-      return opener + '採用情報ページは現在準備中です。晴々への採用に関するお問い合わせは、下記メールアドレス(harebare@harebare-llc.com)まで直接ご連絡いただけますと幸いです。';
+  }
+
+  // ------------------------------------------------------------------
+  // HARE AIに聞かれた内容の記録
+  //
+  // 下のURLは、Googleスプレッドシートに書き込むための受け皿(Google Apps Script)の
+  // アドレスです。空のままなら記録は行われず、チャットはこれまでどおり動きます。
+  // 記録するのは「聞かれた文章・振り分けた分類・見ていたページ」だけで、
+  // 名前やメールアドレスをこちらから尋ねることはしていません。
+  // 記録する旨は privacy.html に明記しています。
+  // ------------------------------------------------------------------
+  const HARE_LOG_URL = '';
+
+  const hareSessionId = Math.random().toString(36).slice(2, 10);
+  let hareTurn = 0;
+
+  function logHareQuestion(question, topic, answeredBy){
+    if (!HARE_LOG_URL) return;
+    try {
+      fetch(HARE_LOG_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({
+          question: question.slice(0, 500),
+          topic: topic,
+          answeredBy: answeredBy,
+          turn: ++hareTurn,
+          session: hareSessionId,
+          page: location.pathname
+        })
+      }).catch(() => {});
+    } catch (e) {
+      // 記録に失敗しても会話は止めない
     }
-    if (t.includes('診断') || t.includes('合う') || t.includes('おすすめ') || t.includes('どっち') || t.includes('どちら')){
-      return opener + '御社の一番の課題は何でしょうか?「人材不足・属人化」「採用」「売上」「業務効率化・DX」のどれかを教えていただければ、AI企画・開発とSNS運用のどちらが合いそうか、簡単にご提案します。';
-    }
-    if (t.includes('経験がない') || t.includes('初めて') || t.includes('詳しくない') || t.includes('分からない') || t.includes('わからない')){
-      return opener + 'AI導入もSNS運用も、経験がない企業様のご相談がほとんどです。現在の業務内容やお困りごとをヒアリングし、何から始めればよいかを一緒に整理するところからスタートしますので、ご安心ください。';
-    }
-    if (t.includes('chatgpt') || t.includes('claude') || t.includes('gemini') || t.includes('汎用') || t.includes('生成ai') || (t.includes('ai') && (t.includes('開発') || t.includes('導入') || t.includes('企画')))){
-      return opener + 'ChatGPTやGeminiのような汎用AIとは違い、私たちがつくるのは御社の業務内容や社内ルールに合わせた「専用AIエージェント」です。ホテル支配人AI・足場図面AI・見積AIなどの開発実績があり、導入後も運用しながら改善を重ねていきます。AI開発の話を詳しく伺うなら、無料相談がおすすめです。';
-    }
-    if (t.includes('instagram') || t.includes('インスタ') || t.includes('tiktok') || t.includes('youtube') || t.includes('sns')){
-      return opener + '特にInstagram運用を得意としています。フォロワー数を追うのではなく「ファンづくり」を重視し、採用広報・集客・ブランディングなど目的から逆算してプロフィール設計から投稿・分析まで伴走します。経験がない企業様も、目的とターゲットのヒアリングから一緒に整理しますのでご安心ください。';
-    }
-    if (t.includes('対応エリア') || t.includes('県外') || t.includes('長崎以外') || t.includes('オンライン')){
-      return opener + '長崎県内はもちろん、長崎県外の企業様もオンライン打ち合わせで対応可能です。業種や企業規模を問わず、まずは現状の課題や目指したい姿をお伺いします。';
-    }
-    if (t.includes('実績') || t.includes('事例') || t.includes('効果')){
-      return opener + 'サービス業のお客様では、SNSを採用広報の窓口として設計し直し、運用開始1ヶ月で応募関連の反響30件・採用決定3件という実績があります。ホテル支配人AIや足場図面AIなど、業種特化の開発事例もページ内の「導入事例」でご紹介していますので、ぜひご覧ください。';
-    }
-    if (t.includes('どんな会社') || t.includes('会社概要') || t.includes('会社について') || t.includes('晴々')){
-      return opener + '合同会社晴々は、長崎県内の企業課題をAIとクリエイティブで解決する地域密着型のパートナーです。AI会社でもSNS会社でもなく、企業ごとの課題に合わせて最適な手段をご提案しています。所在地やメールアドレスはページ下部の会社概要・フッターに記載しています。';
-    }
-    if (t.includes('無料相談') || t.includes('相談したい') || t.includes('問い合わせ') || t.includes('連絡')){
-      return opener + 'ありがとうございます。無料相談は契約を前提としたものではなく、まず現状のお悩みを伺うだけの場です。このままここでご相談内容を伺うことも、harebare@harebare-llc.com宛にメールをいただくことも可能です。';
-    }
-    return opener + 'ご質問ありがとうございます。もう少し詳しく——例えば「人材不足」「採用」「売上」「DX」「SNS運用」のどれに近いお悩みか教えていただけますか?最適なサービスをご案内します。お急ぎでしたらharebare@harebare-llc.comへ直接ご連絡いただいても大丈夫です。';
   }
 
   let hareHistory = [];
@@ -193,13 +247,19 @@
     document.getElementById('hareQuick').style.display = 'none';
 
     const typingEl = addTyping();
-    // 実際の応答っぽい間を持たせるための短い待ち時間
-    await new Promise(resolve => setTimeout(resolve, 500 + Math.random() * 400));
-    typingEl.remove();
 
-    const reply = fallbackReply(text);
+    let reply = await askHareAI(hareHistory);
+    const answeredBy = reply ? 'AI' : '決まり文句';
+    if (!reply) {
+      // 決まり文句のときは、実際に考えているような短い間を置く
+      await new Promise(resolve => setTimeout(resolve, 500 + Math.random() * 400));
+      reply = fallbackReply(text);
+    }
+
+    typingEl.remove();
     addMessage(reply, 'bot');
     hareHistory.push({ role: 'assistant', content: reply });
+    logHareQuestion(text, hareTopicOf(text), answeredBy);
   }
 
 // ------------------------------------------------------------------

@@ -29,7 +29,9 @@ from validate import check_dir  # noqa: E402
 
 # site/ へ写さないもの（開発用の道具や秘密情報）
 SKIP = {"_src", "site", ".git", ".github", ".netlify", ".env", ".gitignore",
-        "netlify.toml", ".DS_Store", "__pycache__", "node_modules"}
+        "netlify.toml", ".DS_Store", "__pycache__", "node_modules",
+        # HARE AI の中継役と、その部品の設定。公開フォルダには写さない
+        "netlify", "package.json", "package-lock.json"}
 
 
 def copy_sources():

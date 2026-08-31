@@ -8,3 +8,8 @@
 
 [build.environment]
   PYTHON_VERSION = "3.13"
+
+# HARE AI の中継役（サイトからは /api/hare で呼び出す）
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"

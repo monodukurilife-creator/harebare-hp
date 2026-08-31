@@ -1,0 +1,9 @@
+{
+  "name": "harebare-hp",
+  "private": true,
+  "type": "module",
+  "description": "合同会社晴々サイト。HARE AI の中継役（netlify/functions/hare.mjs）だけが JavaScript の部品を使います。",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.72.0"
+  }
+}
